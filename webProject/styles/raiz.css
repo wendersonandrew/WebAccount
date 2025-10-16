@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+.corpo-vidoe{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+   
+}

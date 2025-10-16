@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/raiz.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            
+        }
+        input {
+            border:none;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        textarea{
+            border: none;
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+    </style>
+    <title>Account - Organizar</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="logo">Organizar</h2>
+        <nav>
+            <ul class="navegacao">
+                <li class="item"><a href="../Home.html">Home</a></li>
+                <li class="item"><a href="./cadastro.html">Organizar</a></li>
+                <li class="item"><a href="../pages/pagas.html">Pagas</a></li>
+                <li class="item"><a href="../pages/debito.html">Debito</a></li>
+            </ul>
+
+        </nav>
+    </header>
+   <main>
+    <section class="coteudo">
+        <form class="formulario" action="" method="post">
+            <h2 class="cadastro">cadastro</h2>
+
+            <label for="banco">Banco: </label>
+            <input type="text" name="Banco" id="Banco" required>
+
+            <label for="tipoDivida">Tipo Divida: </label>
+            <textarea name="tpdivida" id="tipoDivida" rows="4" maxlength="500" ></textarea>
+
+            <label for="divida">Divida: </label>
+            <input type="number" name="divida" id="divida" required>
+
+            <label for="vencimento">Vencimento: </label>
+            <input type="date" name="data" id="data">
+
+            <label for="parcelas">Parcelas: </label>
+            <input type="number" name="parcelas" id="parcelas">
+
+            <input class="btn" type="button" onclick="mandar()" value="enviar">
+
+
+        </form>
+    </section>
+   </main>
+   <script src="../script/script.js"></script>
+</body>
+</html>
